@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": "../node_modules",
+    "strict": true,
+    "moduleResolution": "node",
+    "target": "es5",
+    "lib": [
+      "es5",
+      "dom"
+    ],
+    "types": [
+      "cypress",
+      "@percy/cypress",
+    ]
+  },
+  "include": [
+    "cypress/integration/*.ts",
+    "cypress/integration/**/*.ts",
+    "support/*.ts",
+    "index.d.ts"
+  ],
+  "exclude": []
+}

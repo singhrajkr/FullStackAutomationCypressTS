@@ -1,0 +1,53 @@
+{
+    "baseUrl": "https://reqres.in",
+    "defaultCommandTimout": 15000,
+    "requestTimeout": 5000,
+    "responseTimeout": 20000,
+    "blockHosts": [
+        "*google.com",
+        "www.google-analytics.com",
+        "*.google-analytics.com",
+        "*google-analytics.com"
+    ],
+    "env": {
+        "projectId": "DTS INTEGRATION AUTOMATION",
+        "EMAIL": "medha@otalio.com",
+        "PASSWORD": "888",
+        "SHIP_ID": "64f91ae289ab11e8be3dfa2819c4da71",
+        "TABLE": {"VPROFILE":"RES_TRANS.VISITOR_PROFILE","VRES": "RES_TRANS.VISITOR_RESERVATIONS","VTDOC": "RES_TRANS.VISITOR_TRAVEL_DOCS"},
+        "STATUS": {"INSERT":"I","UPDATE": "U","CANCEL": "C"},
+        "COUNTRY_ISO3": { "IND": "IND", "ITA": "ITA", "USA": "USA"},
+        "COUNTRY_ISO2": { "IN": "IN", "IT": "IT", "US": "US"},
+        "PREFFERED_LANG": ["EN", "FR","CH","JA","SP","DE","IT","IT","","PT","RU"],
+        "LANG_ISO3": { "ENG": "ENG", "ITA": "ITA"},
+        "LANG_ISO2": { "EN": "EN", "IT": "IT"},
+        "PORT_ISO2": { "IN": "IN", "IT": "IT"},
+        "PORT_ISO3": { "IND": "IND", "ITA": "ITA"},
+        "TITLE":   "Dr.",
+        "TYPE": {"P": "P", "V": "V"},
+        "WAIT_TIME": "60000"
+
+    },
+    "fixturesFolder": "cypress/fixtures",
+    "integrationFolder": "cypress/integration",
+    "pluginsFile": "cypress/plugins/index.ts",
+    "screenshotsFolder": "cypress/screenshots",
+    "supportFile": "cypress/support/index.ts",
+    "videosFolder": "cypress/videos",
+    "video": true,
+    "trashAssetsBeforeRuns": true,
+    "viewportHeight": 660,
+    "viewportWidth": 1000,
+    "waitForAnimations": true,
+    "nodeVersion": "bundled",
+    "onBeforeScreenshot": null,
+    "screenshotOnRunFailure": true,
+    "onAfterScreenshot": null,
+    "videoUploadOnPasses": false,
+    "capture": "runner",
+    "firefoxGcInterval": {
+        "runMode": 1,
+        "openMode": 1
+    },
+    "chromeWebSecurity": false
+}
